@@ -1,0 +1,680 @@
+[
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 4,
+    "respostasErradas": [
+      {
+        "id": "25",
+        "pergunta": "4. Qual foi o principal evento que marcou o início da Segunda Guerra Mundial?",
+        "respostaErrada": "Tratado de Versalhes",
+        "respostaCorreta": "Invasão da Polônia",
+        "disciplina": "História"
+      }
+    ],
+    "respostas": [],
+    "dataHora": "2025-06-30T19:59:23.095Z",
+    "acertosPorDisciplina": {
+      "Geografia": 5,
+      "Matemática": 4,
+      "Literatura": 4,
+      "Química": 4,
+      "História": 3,
+      "Ciências": 2,
+      "Física": 2,
+      "Biologia": 3,
+      "Artes": 1,
+      "Astronomia": 1
+    },
+    "pontuacao": 3
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 4,
+    "respostasErradas": [
+      {
+        "id": "25",
+        "pergunta": "4. Qual foi o principal evento que marcou o início da Segunda Guerra Mundial?",
+        "respostaErrada": "Tratado de Versalhes",
+        "respostaCorreta": "Invasão da Polônia",
+        "disciplina": "História"
+      }
+    ],
+    "respostas": [],
+    "dataHora": "2025-06-30T20:05:55.351Z",
+    "acertosPorDisciplina": {
+      "Geografia": 5,
+      "Matemática": 4,
+      "Literatura": 4,
+      "Química": 4,
+      "História": 3,
+      "Ciências": 2,
+      "Física": 2,
+      "Biologia": 3,
+      "Artes": 1,
+      "Astronomia": 1
+    },
+    "pontuacao": 3
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 4,
+    "respostasErradas": [
+      {
+        "id": "28",
+        "pergunta": "4. Quantos vértices tem um cubo?",
+        "respostaErrada": "6",
+        "respostaCorreta": "8",
+        "disciplina": "Matemática"
+      }
+    ],
+    "respostas": [],
+    "dataHora": "2025-06-30T20:07:33.981Z",
+    "acertosPorDisciplina": {
+      "Geografia": 5,
+      "Matemática": 3,
+      "Literatura": 4,
+      "Química": 4,
+      "História": 4,
+      "Ciências": 2,
+      "Física": 2,
+      "Biologia": 3,
+      "Artes": 1,
+      "Astronomia": 1
+    },
+    "pontuacao": 3
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 2,
+    "respostasErradas": [],
+    "respostas": [],
+    "dataHora": "2025-06-30T20:09:14.106Z",
+    "acertosPorDisciplina": {
+      "Geografia": 5,
+      "Matemática": 4,
+      "Literatura": 4,
+      "Química": 4,
+      "História": 4,
+      "Ciências": 2,
+      "Física": 2,
+      "Biologia": 3,
+      "Artes": 1,
+      "Astronomia": 1
+    },
+    "pontuacao": 2
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostasErradas": [],
+    "respostas": [],
+    "dataHora": "2025-06-30T20:49:24.582Z",
+    "acertosPorDisciplina": {
+      "Geografia": 1,
+      "Literatura": 1,
+      "Química": 1,
+      "História": 1,
+      "Astronomia": 1
+    },
+    "pontuacao": 5
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostasErradas": [],
+    "respostas": [],
+    "dataHora": "2025-07-01T13:03:15.131Z",
+    "acertosPorDisciplina": {
+      "História": 5
+    },
+    "pontuacao": 5
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostasErradas": [
+      {
+        "id": 3,
+        "texto": "O que foi o Tratado de Tordesilhas, assinado em 1494?",
+        "correta": 2,
+        "marcada": 4,
+        "disciplina": "História"
+      }
+    ],
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 1
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 4
+      },
+      {
+        "id": 4,
+        "marcada": 1
+      },
+      {
+        "id": 5,
+        "marcada": 3
+      }
+    ],
+    "dataHora": "2025-07-01T13:24:14.162Z",
+    "acertosPorDisciplina": {
+      "História": 4
+    },
+    "pontuacao": 4
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostasErradas": [
+      {
+        "id": 2,
+        "texto": "Qual evento marcou o início da Idade Moderna?",
+        "correta": 2,
+        "marcada": 1,
+        "disciplina": "História"
+      },
+      {
+        "id": 4,
+        "texto": "Quem liderou a Inconfidência Mineira, movimento que pretendia a independência do Brasil no século XVIII?",
+        "correta": 1,
+        "marcada": 2,
+        "disciplina": "História"
+      }
+    ],
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 1
+      },
+      {
+        "id": 2,
+        "marcada": 1
+      },
+      {
+        "id": 3,
+        "marcada": 2
+      },
+      {
+        "id": 4,
+        "marcada": 2
+      },
+      {
+        "id": 5,
+        "marcada": 3
+      }
+    ],
+    "dataHora": "2025-07-01T13:26:38.180Z",
+    "acertosPorDisciplina": {
+      "História": 3
+    },
+    "pontuacao": 3
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostasErradas": [
+      {
+        "id": 1,
+        "texto": "Qual foi o principal objetivo das Grandes Navegações realizadas por Portugal e Espanha no século XV?",
+        "correta": 1,
+        "marcada": 0,
+        "disciplina": "História"
+      },
+      {
+        "id": 3,
+        "texto": "O que foi o Tratado de Tordesilhas, assinado em 1494?",
+        "correta": 2,
+        "marcada": 1,
+        "disciplina": "História"
+      },
+      {
+        "id": 5,
+        "texto": "Qual foi a principal consequência da Revolução Industrial no século XIX?",
+        "correta": 3,
+        "marcada": 0,
+        "disciplina": "História"
+      }
+    ],
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 0
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 1
+      },
+      {
+        "id": 4,
+        "marcada": 1
+      },
+      {
+        "id": 5,
+        "marcada": 0
+      }
+    ],
+    "dataHora": "2025-07-01T13:29:49.928Z",
+    "acertosPorDisciplina": {
+      "História": 2
+    },
+    "pontuacao": 2
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 4
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 3
+      },
+      {
+        "id": 4,
+        "marcada": 1
+      },
+      {
+        "id": 5,
+        "marcada": 3
+      }
+    ],
+    "respostasErradas": [
+      {
+        "id": 1,
+        "texto": "Qual foi o principal objetivo das Grandes Navegações realizadas por Portugal e Espanha no século XV?",
+        "correta": 1,
+        "marcada": 4,
+        "disciplina": "História"
+      },
+      {
+        "id": 3,
+        "texto": "O que foi o Tratado de Tordesilhas, assinado em 1494?",
+        "correta": 2,
+        "marcada": 3,
+        "disciplina": "História"
+      }
+    ],
+    "dataHora": "2025-07-01T13:41:01.433Z",
+    "acertosPorDisciplina": {
+      "História": 3
+    },
+    "pontuacao": 3
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 2
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 2
+      },
+      {
+        "id": 4,
+        "marcada": 0
+      },
+      {
+        "id": 5,
+        "marcada": 3
+      }
+    ],
+    "respostasErradas": [
+      {
+        "id": 1,
+        "texto": "Qual foi o principal objetivo das Grandes Navegações realizadas por Portugal e Espanha no século XV?",
+        "correta": 1,
+        "marcada": 2,
+        "disciplina": "História"
+      },
+      {
+        "id": 4,
+        "texto": "Quem liderou a Inconfidência Mineira, movimento que pretendia a independência do Brasil no século XVIII?",
+        "correta": 1,
+        "marcada": 0,
+        "disciplina": "História"
+      }
+    ],
+    "dataHora": "2025-07-01T13:45:33.190Z",
+    "acertosPorDisciplina": {
+      "História": 3
+    },
+    "pontuacao": 3
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 1
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 1
+      },
+      {
+        "id": 4,
+        "marcada": 3
+      },
+      {
+        "id": 5,
+        "marcada": 3
+      }
+    ],
+    "respostasErradas": [
+      {
+        "id": 1,
+        "texto": "Qual comando é utilizado para criar uma instância de uma classe em Delphi?",
+        "correta": 2,
+        "marcada": 1,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 3,
+        "texto": "No Delphi, qual a função de um `DataModule`?",
+        "correta": 2,
+        "marcada": 1,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 4,
+        "texto": "Qual dessas estruturas de repetição é suportada nativamente no Delphi?",
+        "correta": 0,
+        "marcada": 3,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 5,
+        "texto": "Qual das opções abaixo representa uma forma correta de declarar um array estático em Delphi?",
+        "correta": 0,
+        "marcada": 3,
+        "disciplina": "Delphi"
+      }
+    ],
+    "dataHora": "2025-07-02T20:11:14.610Z",
+    "acertosPorDisciplina": {
+      "Delphi": 1
+    },
+    "pontuacao": 1
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 5,
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 2
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 2
+      },
+      {
+        "id": 4,
+        "marcada": 0
+      },
+      {
+        "id": 5,
+        "marcada": 0
+      }
+    ],
+    "respostasErradas": [],
+    "dataHora": "2025-07-02T20:17:45.803Z",
+    "acertosPorDisciplina": {
+      "Delphi": 5
+    },
+    "pontuacao": 5
+  },
+  {
+    "nome": "André Felipe Rocha",
+    "totalPerguntas": 30,
+    "respostas": [
+      {
+        "id": 1,
+        "marcada": 2
+      },
+      {
+        "id": 2,
+        "marcada": 2
+      },
+      {
+        "id": 3,
+        "marcada": 1
+      },
+      {
+        "id": 4,
+        "marcada": 2
+      },
+      {
+        "id": 5,
+        "marcada": 2
+      },
+      {
+        "id": 6,
+        "marcada": 2
+      },
+      {
+        "id": 7,
+        "marcada": 3
+      },
+      {
+        "id": 8,
+        "marcada": 2
+      },
+      {
+        "id": 9,
+        "marcada": 2
+      },
+      {
+        "id": 10,
+        "marcada": 0
+      },
+      {
+        "id": 11,
+        "marcada": 2
+      },
+      {
+        "id": 12,
+        "marcada": 2
+      },
+      {
+        "id": 13,
+        "marcada": 3
+      },
+      {
+        "id": 14,
+        "marcada": 2
+      },
+      {
+        "id": 15,
+        "marcada": 2
+      },
+      {
+        "id": 16,
+        "marcada": 1
+      },
+      {
+        "id": 17,
+        "marcada": 2
+      },
+      {
+        "id": 18,
+        "marcada": 2
+      },
+      {
+        "id": 19,
+        "marcada": 0
+      },
+      {
+        "id": 20,
+        "marcada": 3
+      },
+      {
+        "id": 21,
+        "marcada": 2
+      },
+      {
+        "id": 22,
+        "marcada": 2
+      },
+      {
+        "id": 23,
+        "marcada": 3
+      },
+      {
+        "id": 24,
+        "marcada": 1
+      },
+      {
+        "id": 25,
+        "marcada": 0
+      },
+      {
+        "id": 26,
+        "marcada": 1
+      },
+      {
+        "id": 27,
+        "marcada": 2
+      },
+      {
+        "id": 28,
+        "marcada": 3
+      },
+      {
+        "id": 29,
+        "marcada": 1
+      },
+      {
+        "id": 30,
+        "marcada": 0
+      }
+    ],
+    "respostasErradas": [
+      {
+        "id": 5,
+        "texto": "Qual componente é utilizado para exibir dados em formato tabular?",
+        "correta": 3,
+        "marcada": 2,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 7,
+        "texto": "Como se declara um array fixo de 10 inteiros em Delphi?",
+        "correta": 1,
+        "marcada": 3,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 8,
+        "texto": "Qual operador lógico representa E (AND) em Delphi?",
+        "correta": 1,
+        "marcada": 2,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 9,
+        "texto": "O que é um *record* em Delphi?",
+        "correta": 0,
+        "marcada": 2,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 12,
+        "texto": "Qual dessas opções é um tipo de dado booleano válido em Delphi?",
+        "correta": 3,
+        "marcada": 2,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 13,
+        "texto": "O que representa a diretiva 'private' em Delphi?",
+        "correta": 1,
+        "marcada": 3,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 17,
+        "texto": "Como se chama a conversão de tipo explícita em Delphi?",
+        "correta": 0,
+        "marcada": 2,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 20,
+        "texto": "Qual dessas opções representa um tipo de dado variante em Delphi?",
+        "correta": 0,
+        "marcada": 3,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 24,
+        "texto": "Qual o uso principal de TClientDataSet?",
+        "correta": 2,
+        "marcada": 1,
+        "disciplina": "Banco de Dados"
+      },
+      {
+        "id": 27,
+        "texto": "Como executar uma SQL simples usando TFdQuery?",
+        "correta": 0,
+        "marcada": 2,
+        "disciplina": "Banco de Dados"
+      },
+      {
+        "id": 28,
+        "texto": "O que significa RAD no contexto do Delphi?",
+        "correta": 0,
+        "marcada": 3,
+        "disciplina": "Delphi"
+      },
+      {
+        "id": 29,
+        "texto": "O que faz a função `Length()` em Delphi?",
+        "correta": 2,
+        "marcada": 1,
+        "disciplina": "Lógica"
+      }
+    ],
+    "dataHora": "2025-07-02T20:47:36.773Z",
+    "acertosPorDisciplina": {
+      "Delphi": 11,
+      "POO": 4,
+      "Banco de Dados": 2,
+      "Lógica": 1
+    },
+    "pontuacao": 18
+  }
+]

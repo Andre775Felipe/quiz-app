@@ -1,0 +1,59 @@
+<div class="container mt-5">
+  <div class="card shadow-sm mx-auto position-relative" style="max-width: 600px;">
+    
+    <!-- Botão no canto superior direito -->
+    <div style="position: absolute; top: 2px; right: 2px;">
+      <a href="/adicionar" class="btn btn-outline-secondary btn-sm fw-semibold">
+        + Adicionar Questões
+      </a>
+    </div>
+
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4">Bem-vindo ao Quiz</h2>
+
+      <form action="/quiz" method="POST">
+        <div class="mb-4">
+          <label for="nome" class="form-label fw-semibold">Seu nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            class="form-control form-control-lg"
+            placeholder="Digite seu nome completo"
+            required
+          >
+        </div>
+
+        <fieldset class="mb-4">
+          <legend class="col-form-label fw-semibold mb-3">
+            Selecione as disciplinas que deseja responder:
+          </legend>
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            {{#each disciplinas}}
+              <div class="col">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="disciplinas"
+                    id="disciplina-{{@index}}"
+                    value="{{this}}"
+                  >
+                  <label class="form-check-label" for="disciplina-{{@index}}">
+                    {{this}}
+                  </label>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </fieldset>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg fw-bold">
+            Iniciar Quiz
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

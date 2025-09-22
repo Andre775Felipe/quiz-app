@@ -1,0 +1,34 @@
+<div class="container mt-5" style="max-width: 700px;">
+  <h2 class="mb-4 text-center">Quiz para {{nome}}</h2>
+  <form id="quizForm" class="needs-validation" novalidate>
+    <!-- Agora input de nome visível para o usuário -->
+    <div class="mb-4 d-n one">
+      <label for="nomeUsuario" class="form-label d-none">Informe seu nome:</label>
+      <input type="text" id="nomeUsuario" name="nome" class="form-control" value="{{nome}}" required>
+    </div>
+
+    {{#each perguntas}}
+    <div class="mb-5 pergunta card p-4 shadow-sm" data-id="{{id}}" data-correta="{{correta}}"
+      data-disciplina="{{disciplina}}" style="{{#if @first}}display:block;{{else}}display:none;{{/if}}">
+      <h5 class="mb-3 fw-semibold">{{increment @index}}. {{texto}}</h5>
+      <div class="list-group">
+        {{#each opcoes}}
+        <label class="list-group-item list-group-item-action d-flex align-items-center" for="{{../id}}-{{@index}}">
+          <input class="form-check-input me-3 opcao" type="radio" name="pergunta-{{../id}}" value="{{@index}}"
+            id="{{../id}}-{{@index}}" required>
+          <span>{{this}}</span>
+        </label>
+        {{/each}}
+      </div>
+    </div>
+    {{/each}}
+
+    <div class="d-flex justify-content-center">
+      <button type="button" id="btnFinalizar" class="btn btn-success btn-lg mt-3" style="display:none;">
+        Finalizar Quiz
+      </button>
+    </div>
+  </form>
+</div>
+
+<script src="/js/quiz.js"></script>

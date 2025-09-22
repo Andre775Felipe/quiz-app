@@ -1,0 +1,314 @@
+[
+  {
+    "id": 1,
+    "texto": "Qual comando é utilizado para criar uma instância de uma classe em Delphi?",
+    "opcoes": ["CreateObject", "new", "Create", "Alloc", "Instance"],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 2,
+    "texto": "Qual unidade é usada para acesso a banco de dados no Delphi usando FireDAC?",
+    "opcoes": ["DBGrid", "DataModule", "FDConnection", "SqlConnection", "ADOQuery"],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 3,
+    "texto": "Qual a função principal de um DataModule em Delphi?",
+    "opcoes": [
+      "Exibir componentes visuais",
+      "Isolar componentes não-visuais",
+      "Criar tabelas temporárias",
+      "Salvar configurações do usuário",
+      "Gerar arquivos executáveis"
+    ],
+    "correta": 1,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 4,
+    "texto": "Qual estrutura representa corretamente um loop em Delphi?",
+    "opcoes": ["for(i=0;i<10;i++)", "foreach x in y", "for i := 0 to 9 do", "do while()", "loop until"],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 5,
+    "texto": "Qual componente é utilizado para exibir dados em formato tabular?",
+    "opcoes": ["TEdit", "TPanel", "TLabel", "TDBGrid", "TStringList"],
+    "correta": 3,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 6,
+    "texto": "Qual evento é usado para tratar um clique em botão no Delphi?",
+    "opcoes": ["OnKeyPress", "OnChange", "OnClick", "OnLoad", "OnHover"],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 7,
+    "texto": "Como se declara um array fixo de 10 inteiros em Delphi?",
+    "opcoes": [
+      "var A: array of Integer;",
+      "var A: array[1..10] of Integer;",
+      "Integer A[10];",
+      "Array A = new Integer[10];",
+      "array<Integer> A;"
+    ],
+    "correta": 1,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 8,
+    "texto": "Qual operador lógico representa E (AND) em Delphi?",
+    "opcoes": ["&&", "and", "&", "e", "&&&"],
+    "correta": 1,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 9,
+    "texto": "O que é um *record* em Delphi?",
+    "opcoes": [
+      "Um tipo de dado composto similar a classe, mas sem herança",
+      "Um componente visual",
+      "Uma tabela do banco",
+      "Uma função matemática",
+      "Um tipo de evento"
+    ],
+    "correta": 0,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 10,
+    "texto": "Qual função converte string em inteiro em Delphi?",
+    "opcoes": ["StrToInt", "Int", "ToInt", "CastString", "Convert.ToInt"],
+    "correta": 0,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 11,
+    "texto": "O que faz o comando Try...Except em Delphi?",
+    "opcoes": [
+      "Executa comandos em ordem assíncrona",
+      "Define tipos de dados complexos",
+      "Trata exceções e erros em tempo de execução",
+      "Cria um loop infinito",
+      "Declara eventos para botões"
+    ],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 12,
+    "texto": "Qual dessas opções é um tipo de dado booleano válido em Delphi?",
+    "opcoes": ["Bit", "Flag", "Bool", "Boolean", "YesNo"],
+    "correta": 3,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 13,
+    "texto": "O que representa a diretiva 'private' em Delphi?",
+    "opcoes": [
+      "Métodos acessíveis apenas dentro da unit",
+      "Métodos acessíveis somente pela classe",
+      "Métodos visíveis globalmente",
+      "Classes protegidas contra cópia",
+      "Atributos imutáveis"
+    ],
+    "correta": 1,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 14,
+    "texto": "Qual a função do componente TTimer?",
+    "opcoes": [
+      "Marcar tempo de execução",
+      "Atualizar hora do sistema",
+      "Executar ações em intervalos definidos",
+      "Configurar datas",
+      "Cronometrar sessões do usuário"
+    ],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 15,
+    "texto": "Como é chamada a técnica de reutilização de código em Delphi orientado a objetos?",
+    "opcoes": ["Composição", "Delegação", "Herança", "Polimorfismo", "Encapsulamento"],
+    "correta": 2,
+    "disciplina": "POO",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 16,
+    "texto": "Qual comando inicia uma transação com banco de dados em Delphi?",
+    "opcoes": ["Start", "BeginTransaction", "StartSQL", "BeginTrans", "SQLBegin"],
+    "correta": 1,
+    "disciplina": "Banco de Dados",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 17,
+    "texto": "Como se chama a conversão de tipo explícita em Delphi?",
+    "opcoes": ["Casting", "Override", "TypeOf", "Recasting", "Forcing"],
+    "correta": 0,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 18,
+    "texto": "Qual componente pode ser usado para conexões com banco de dados Firebird?",
+    "opcoes": ["TADOQuery", "TQuery", "TFDQuery", "TSqlQuery", "TOleDbQuery"],
+    "correta": 2,
+    "disciplina": "Banco de Dados",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 19,
+    "texto": "Qual a sintaxe correta para definir uma propriedade em uma classe Delphi?",
+    "opcoes": [
+      "property Nome: string;",
+      "define Nome: string;",
+      "prop Nome as string;",
+      "Nome as Property string;",
+      "var Nome: Property of string;"
+    ],
+    "correta": 0,
+    "disciplina": "POO",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 20,
+    "texto": "Qual dessas opções representa um tipo de dado variante em Delphi?",
+    "opcoes": ["Variant", "Flexible", "Object", "VarData", "Universal"],
+    "correta": 0,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 21,
+    "texto": "Qual palavra-chave em Delphi é usada para criar uma interface?",
+    "opcoes": ["class", "object", "interface", "type", "record"],
+    "correta": 2,
+    "disciplina": "POO",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 22,
+    "texto": "O que o evento OnCreate de um Form faz?",
+    "opcoes": [
+      "É chamado após o formulário ser destruído",
+      "É chamado antes do formulário ser criado",
+      "É executado na criação do formulário",
+      "Define estilos visuais",
+      "Inicializa o banco de dados"
+    ],
+    "correta": 2,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 23,
+    "texto": "Em Delphi, como se trata erros sem encerrar o programa?",
+    "opcoes": ["Try..Finally", "If..Then", "Break", "Try..Except", "Assert"],
+    "correta": 3,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 24,
+    "texto": "Qual o uso principal de TClientDataSet?",
+    "opcoes": [
+      "Executar comandos SQL em segundo plano",
+      "Criar interfaces gráficas com dados",
+      "Gerenciar dados em memória desconectada",
+      "Mostrar registros em tela",
+      "Atualizar o banco de dados remoto"
+    ],
+    "correta": 2,
+    "disciplina": "Banco de Dados",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 25,
+    "texto": "Em Delphi, qual operador é usado para atribuição?",
+    "opcoes": [":=", "=", "==", "<-", "::"],
+    "correta": 0,
+    "disciplina": "Lógica",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 26,
+    "texto": "Como se chama a técnica de esconder os detalhes internos de uma classe?",
+    "opcoes": ["Herança", "Encapsulamento", "Polimorfismo", "Modularidade", "Abstração"],
+    "correta": 1,
+    "disciplina": "POO",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 27,
+    "texto": "Como executar uma SQL simples usando TFdQuery?",
+    "opcoes": [
+      "FDQuery1.ExecSQL;",
+      "FDQuery1.Execute;",
+      "FDQuery1.RunSQL;",
+      "FDQuery1.Start;",
+      "FDQuery1.BeginExec;"
+    ],
+    "correta": 0,
+    "disciplina": "Banco de Dados",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 28,
+    "texto": "O que significa RAD no contexto do Delphi?",
+    "opcoes": [
+      "Rapid Application Development",
+      "Real Abstract Designer",
+      "Runtime API Documentation",
+      "Remote Application Debugging",
+      "Resource Aware Delphi"
+    ],
+    "correta": 0,
+    "disciplina": "Delphi",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 29,
+    "texto": "O que faz a função `Length()` em Delphi?",
+    "opcoes": [
+      "Retorna a posição final do array",
+      "Define o tamanho de uma string",
+      "Retorna o tamanho de arrays ou strings",
+      "Corta a string no índice",
+      "Substitui caracteres por espaço"
+    ],
+    "correta": 2,
+    "disciplina": "Lógica",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 30,
+    "texto": "Para acessar um item específico de um array em Delphi, qual é a sintaxe correta?",
+    "opcoes": ["array[i]", "array.i", "array{i}", "array(i)", "get(array, i)"],
+    "correta": 0,
+    "disciplina": "Delphi",
+    "dificuldade": "fácil"
+  }
+]

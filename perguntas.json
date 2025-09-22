@@ -1,0 +1,408 @@
+[
+  {
+    "id": 6,
+    "texto": "Qual é o maior país do mundo em área territorial?",
+    "opcoes": [
+      "China",
+      "Estados Unidos",
+      "Rússia",
+      "Canadá",
+      "Brasil"
+    ],
+    "correta": 2,
+    "disciplina": "Geografia",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 7,
+    "texto": "Quanto é 15% de 200?",
+    "opcoes": [
+      "25",
+      "30",
+      "20",
+      "35",
+      "40"
+    ],
+    "correta": 1,
+    "disciplina": "Matemática",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 8,
+    "texto": "Quem é o autor do livro 'Dom Casmurro'?",
+    "opcoes": [
+      "José de Alencar",
+      "Machado de Assis",
+      "Jorge Amado",
+      "Graciliano Ramos",
+      "Clarice Lispector"
+    ],
+    "correta": 1,
+    "disciplina": "Literatura",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 9,
+    "texto": "Qual é a fórmula química da água?",
+    "opcoes": [
+      "H2O",
+      "CO2",
+      "O2",
+      "NaCl",
+      "CH4"
+    ],
+    "correta": 0,
+    "disciplina": "Química",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 10,
+    "texto": "Quem foi o primeiro presidente do Brasil?",
+    "opcoes": [
+      "Getúlio Vargas",
+      "Juscelino Kubitschek",
+      "Deodoro da Fonseca",
+      "Dom Pedro II",
+      "Floriano Peixoto"
+    ],
+    "correta": 2,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 11,
+    "texto": "Qual é o principal rio da Amazônia?",
+    "opcoes": [
+      "Rio Negro",
+      "Rio Madeira",
+      "Rio Amazonas",
+      "Rio Tapajós",
+      "Rio Xingu"
+    ],
+    "correta": 2,
+    "disciplina": "Geografia",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 12,
+    "texto": "Qual é o resultado da soma 123 + 456?",
+    "opcoes": [
+      "579",
+      "569",
+      "589",
+      "5790",
+      "599"
+    ],
+    "correta": 0,
+    "disciplina": "Matemática",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 13,
+    "texto": "Quem escreveu 'Os Lusíadas'?",
+    "opcoes": [
+      "Camões",
+      "Cecília Meireles",
+      "Machado de Assis",
+      "Ferreira Gullar",
+      "Carlos Drummond"
+    ],
+    "correta": 0,
+    "disciplina": "Literatura",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 14,
+    "texto": "Qual é o símbolo químico do ferro?",
+    "opcoes": [
+      "Fe",
+      "F",
+      "Ir",
+      "Fl",
+      "Fr"
+    ],
+    "correta": 0,
+    "disciplina": "Química",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 15,
+    "texto": "Em que ano ocorreu a Proclamação da República no Brasil?",
+    "opcoes": [
+      "1889",
+      "1822",
+      "1500",
+      "1930",
+      "1964"
+    ],
+    "correta": 0,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 16,
+    "texto": "Qual é o ponto mais alto do Brasil?",
+    "opcoes": [
+      "Pico da Neblina",
+      "Pico das Agulhas Negras",
+      "Pico da Bandeira",
+      "Pico do Cristal",
+      "Pico do Itatiaia"
+    ],
+    "correta": 0,
+    "disciplina": "Geografia",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 17,
+    "texto": "Qual é a raiz quadrada de 144?",
+    "opcoes": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correta": 2,
+    "disciplina": "Matemática",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 18,
+    "texto": "Qual obra é considerada marco do Modernismo no Brasil?",
+    "opcoes": [
+      "Macunaíma",
+      "Grande Sertão: Veredas",
+      "Morte e Vida Severina",
+      "Os Sertões",
+      "Memórias Póstumas de Brás Cubas"
+    ],
+    "correta": 0,
+    "disciplina": "Literatura",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 19,
+    "texto": "Qual gás é mais abundante na atmosfera terrestre?",
+    "opcoes": [
+      "Oxigênio",
+      "Nitrogênio",
+      "Dióxido de Carbono",
+      "Argônio",
+      "Hélio"
+    ],
+    "correta": 1,
+    "disciplina": "Química",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 20,
+    "texto": "Quem foi responsável pela construção de Brasília?",
+    "opcoes": [
+      "Oscar Niemeyer",
+      "Juscelino Kubitschek",
+      "Lúcio Costa",
+      "A e B",
+      "Nenhuma das anteriores"
+    ],
+    "correta": 3,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 21,
+    "texto": "Qual o símbolo químico do sódio?",
+    "opcoes": [
+      "S",
+      "Na",
+      "So",
+      "Sd",
+      "Sn"
+    ],
+    "correta": 1,
+    "disciplina": "Química",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 22,
+    "texto": "Quem foi Albert Einstein?",
+    "opcoes": [
+      "Um matemático",
+      "Um físico",
+      "Um químico",
+      "Um biólogo",
+      "Um engenheiro"
+    ],
+    "correta": 1,
+    "disciplina": "Ciências",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 23,
+    "texto": "Qual é a fórmula para calcular a velocidade média?",
+    "opcoes": [
+      "distância x tempo",
+      "distância ÷ tempo",
+      "tempo ÷ distância",
+      "tempo + distância",
+      "distância - tempo"
+    ],
+    "correta": 1,
+    "disciplina": "Física",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 24,
+    "texto": "Qual é o processo pelo qual as plantas produzem seu alimento?",
+    "opcoes": [
+      "Respiração",
+      "Fotossíntese",
+      "Transpiração",
+      "Digestão",
+      "Fermentação"
+    ],
+    "correta": 1,
+    "disciplina": "Biologia",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 25,
+    "texto": "Qual foi o principal evento que marcou o início da Segunda Guerra Mundial?",
+    "opcoes": [
+      "Ataque a Pearl Harbor",
+      "Invasão da Polônia",
+      "Queda da Bastilha",
+      "Revolução Russa",
+      "Tratado de Versalhes"
+    ],
+    "correta": 1,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 26,
+    "texto": "Quem pintou a Mona Lisa?",
+    "opcoes": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Raphael",
+      "Donatello",
+      "Caravaggio"
+    ],
+    "correta": 1,
+    "disciplina": "Artes",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 27,
+    "texto": "Qual é o menor país do mundo?",
+    "opcoes": [
+      "Mônaco",
+      "Nauru",
+      "Vaticano",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "correta": 2,
+    "disciplina": "Geografia",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 28,
+    "texto": "Quantos vértices tem um cubo?",
+    "opcoes": [
+      "6",
+      "8",
+      "12",
+      "16",
+      "10"
+    ],
+    "correta": 1,
+    "disciplina": "Matemática",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 30,
+    "texto": "Qual destes planetas é conhecido como Planeta Vermelho?",
+    "opcoes": [
+      "Mercúrio",
+      "Vênus",
+      "Marte",
+      "Júpiter",
+      "Saturno"
+    ],
+    "correta": 2,
+    "disciplina": "Astronomia",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 31,
+    "texto": "Qual é o órgão responsável por bombear sangue no corpo humano?",
+    "opcoes": [
+      "Fígado",
+      "Pulmões",
+      "Coração",
+      "Rins",
+      "Estômago"
+    ],
+    "correta": 2,
+    "disciplina": "Biologia",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 32,
+    "texto": "Quem foi o responsável pela Teoria da Evolução?",
+    "opcoes": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Charles Darwin",
+      "Galileu Galilei",
+      "Louis Pasteur"
+    ],
+    "correta": 2,
+    "disciplina": "Ciências",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 33,
+    "texto": "Qual é a capital da Austrália?",
+    "opcoes": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane",
+      "Perth"
+    ],
+    "correta": 2,
+    "disciplina": "Geografia",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 34,
+    "texto": "Qual é a unidade de medida da intensidade elétrica?",
+    "opcoes": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt",
+      "Joule"
+    ],
+    "correta": 1,
+    "disciplina": "Física",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 35,
+    "texto": "Qual das opções abaixo é um animal vertebrado?",
+    "opcoes": [
+      "Coral",
+      "Estrela-do-mar",
+      "Tubarão",
+      "Ácaro",
+      "Água-viva"
+    ],
+    "correta": 2,
+    "disciplina": "Biologia",
+    "dificuldade": "médio"
+  }
+]

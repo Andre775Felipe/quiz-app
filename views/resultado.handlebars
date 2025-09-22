@@ -1,0 +1,206 @@
+<div class="container mt-4">
+  <div class="card border-primary mb-4">
+    <div class="card-header bg-primary text-white">
+      <h2 class="mb-0"><i class="fas fa-clipboard-check me-2"></i>Resultado Final</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong><i class="fas fa-user me-2"></i>Nome:</strong> {{resultado.nome}}</p>
+          <p><strong><i class="fas fa-calendar-alt me-2"></i>Data:</strong> {{formatDate resultado.dataHora}}</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong><i class="fas fa-star me-2"></i>Pontuação:</strong> 
+            <span class="badge bg-{{getScoreClass resultado.pontuacao resultado.totalPerguntas}}">
+              {{resultado.pontuacao}}/{{resultado.totalPerguntas}}
+            </span>
+          </p>
+          <div class="progress mt-2" style="height: 25px;">
+            <div class="progress-bar progress-bar-striped bg-{{getScoreClass resultado.pontuacao resultado.totalPerguntas}}" 
+                 role="progressbar" 
+                 style="width: {{calculatePercentage resultado.pontuacao resultado.totalPerguntas}}%" 
+                 aria-valuenow="{{resultado.pontuacao}}" 
+                 aria-valuemin="0" 
+                 aria-valuemax="{{resultado.totalPerguntas}}">
+              {{calculatePercentage resultado.pontuacao resultado.totalPerguntas}}%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Mensagem de sucesso, erro ou nenhuma resposta --}}
+  {{#if (eq resultado.pontuacao resultado.totalPerguntas)}}
+    <div class="alert alert-success d-flex align-items-center">
+      <i class="fas fa-trophy fa-2x me-3"></i>
+      <div>
+        <h4 class="alert-heading">Excelente!</h4>
+        <p class="mb-0">Você acertou todas as questões! Parabéns!</p>
+      </div>
+    </div>
+  {{else if resultado.respostasErradas}}
+    {{#if resultado.respostasErradas.length}}
+      <div class="card border-warning mb-4">
+        <div class="card-header bg-warning text-dark">
+          <h4 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i>Questões Incorretas ({{resultado.respostasErradas.length}})</h4>
+        </div>
+        <div class="card-body p-0">
+          <div class="list-group list-group-flush">
+            {{#each resultado.respostasErradas}}
+              <div class="list-group-item">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h5 class="mb-1"><span class="badge bg-secondary me-2">{{increment @index}}</span> {{pergunta}}</h5>
+                    <p class="mb-1"><small class="text-muted"><i class="fas fa-book me-1"></i>{{disciplina}}</small></p>
+                  </div>
+                  <span class="badge bg-danger">Errada</span>
+                </div>
+                <div class="mt-3">
+                  <div class="alert alert-danger py-2 mb-2">
+                    <i class="fas fa-times-circle me-2"></i><strong>Sua resposta:</strong> {{respostaErrada}}
+                  </div>
+                  <div class="alert alert-success py-2 mb-0">
+                    <i class="fas fa-check-circle me-2"></i><strong>Resposta correta:</strong> {{respostaCorreta}}
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    {{else}}
+      <div class="alert alert-info d-flex align-items-center">
+        <i class="fas fa-info-circle fa-2x me-3"></i>
+        <div>
+          <h4 class="alert-heading">Atenção</h4>
+          <p class="mb-0">Nenhuma resposta correta foi registrada.</p>
+        </div>
+      </div>
+    {{/if}}
+  {{else}}
+    <div class="alert alert-info d-flex align-items-center">
+      <i class="fas fa-info-circle fa-2x me-3"></i>
+      <div>
+        <h4 class="alert-heading">Atenção</h4>
+        <p class="mb-0">Nenhuma resposta correta foi registrada.</p>
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if (gt (size resultado.acertosPorDisciplina) 0)}}
+    <div class="card border-info mt-4">
+      <div class="card-header bg-info text-white">
+        <h4 class="mb-0"><i class="fas fa-chart-bar me-2"></i>Desempenho por Disciplina</h4>
+      </div>
+      <div class="card-body position-relative" style="height: 400px;">
+        <canvas id="graficoDisciplinas"></canvas>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const acertosPorDisciplina = {{{json resultado.acertosPorDisciplina}}};
+        const totalPerguntas = {{resultado.totalPerguntas}}; // Total de perguntas do quiz
+
+        // Extrair labels (disciplinas) e data (acertos)
+        const labels = Object.keys(acertosPorDisciplina);
+        const data = Object.values(acertosPorDisciplina);
+
+        // Para calcular a porcentagem de acertos por disciplina, precisamos do total de perguntas por disciplina.
+        // Isso não está diretamente disponível no objeto resultado.acertosPorDisciplina.
+        // Você precisaria passar o total de perguntas por disciplina do backend para o frontend,
+        // ou recalcular aqui se tiver acesso a todas as perguntas.
+        // Por enquanto, vamos exibir apenas o número de acertos.
+        // Se quiser porcentagem, o backend precisaria enviar algo como:
+        // { "Geografia": { "acertos": 5, "total": 10 }, ... }
+
+        // Exemplo de cores para o gráfico (pode ser expandido)
+        const backgroundColors = [
+          'rgba(255, 99, 132, 0.6)', // Vermelho
+          'rgba(54, 162, 235, 0.6)', // Azul
+          'rgba(255, 206, 86, 0.6)', // Amarelo
+          'rgba(75, 192, 192, 0.6)', // Verde
+          'rgba(153, 102, 255, 0.6)', // Roxo
+          'rgba(255, 159, 64, 0.6)', // Laranja
+          'rgba(199, 199, 199, 0.6)', // Cinza
+          'rgba(83, 102, 255, 0.6)', // Azul claro
+          'rgba(255, 99, 71, 0.6)', // Tomate
+          'rgba(60, 179, 113, 0.6)'  // Verde mar
+        ];
+        const borderColors = [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(199, 199, 199, 1)',
+          'rgba(83, 102, 255, 1)',
+          'rgba(255, 99, 71, 1)',
+          'rgba(60, 179, 113, 1)'
+        ];
+
+        const ctx = document.getElementById('graficoDisciplinas').getContext('2d');
+        new Chart(ctx, {
+          type: 'bar', // Tipo de gráfico: barra
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Acertos por Disciplina',
+              data: data,
+              backgroundColor: backgroundColors.slice(0, labels.length), // Usa cores suficientes
+              borderColor: borderColors.slice(0, labels.length),
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false, // Permite controlar a altura com CSS
+            scales: {
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'Número de Acertos'
+                },
+                ticks: {
+                  // Garante que os ticks sejam números inteiros
+                  callback: function(value) {
+                    if (Number.isInteger(value)) {
+                      return value;
+                    }
+                  }
+                }
+              },
+              x: {
+                title: {
+                  display: true,
+                  text: 'Disciplina'
+                }
+              }
+            },
+            plugins: {
+              legend: {
+                display: false // Não exibe a legenda do dataset
+              },
+              title: {
+                display: true,
+                text: 'Desempenho por Disciplina'
+              }
+            }
+          }
+        });
+      });
+    </script>
+  {{/if}}
+
+  <div class="text-center my-4">
+    <a href="/" class="btn btn-primary btn-lg px-5 me-3">
+      <i class="fas fa-home me-2"></i>Voltar ao Início
+    </a>
+    <button onclick="window.print()" class="btn btn-outline-secondary btn-lg px-5">
+      <i class="fas fa-print me-2"></i>Imprimir Resultado
+    </button>
+  </div>
+</div>
