@@ -1,33 +1,23 @@
-<div class="container mt-5">
-  <h2 class="mb-4 text-primary fw-bold border-bottom pb-2">Gerenciar Questões</h2>
+<div class="container my-4 my-md-5">
+  <!-- Barra superior com Voltar + Título -->
+  <div class="d-flex flex-column flex-md-row align-items-md-center gap-2 mb-3">
+    <a href="/" class="btn btn-outline-secondary btn-sm">
+      <i class="bi bi-arrow-left me-1"></i> Voltar
+    </a>
+    <h2 class="mb-0 text-primary fw-bold ms-md-2">Gerenciar Questões</h2>
+  </div>
 
   <!-- Nav Tabs -->
   <ul class="nav nav-tabs" id="questoesTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button
-        class="nav-link active fw-semibold"
-        id="inserir-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#inserir"
-        type="button"
-        role="tab"
-        aria-controls="inserir"
-        aria-selected="true"
-      >
+      <button class="nav-link active fw-semibold" id="inserir-tab" data-bs-toggle="tab" data-bs-target="#inserir"
+        type="button" role="tab" aria-controls="inserir" aria-selected="true">
         <i class="bi bi-pencil-square me-1"></i> Inserir Questões
       </button>
     </li>
     <li class="nav-item" role="presentation">
-      <button
-        class="nav-link fw-semibold"
-        id="visualizar-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#visualizar"
-        type="button"
-        role="tab"
-        aria-controls="visualizar"
-        aria-selected="false"
-      >
+      <button class="nav-link fw-semibold" id="visualizar-tab" data-bs-toggle="tab" data-bs-target="#visualizar"
+        type="button" role="tab" aria-controls="visualizar" aria-selected="false">
         <i class="bi bi-list-ul me-1"></i> Ver Questões Cadastradas
       </button>
     </li>
@@ -35,59 +25,48 @@
 
   <!-- Tab Content -->
   <div class="tab-content mt-4" id="questoesTabContent">
-
     <!-- Inserir Questões -->
-    <div
-      class="tab-pane fade show active"
-      id="inserir"
-      role="tabpanel"
-      aria-labelledby="inserir-tab"
-    >
+    <div class="tab-pane fade show active" id="inserir" role="tabpanel" aria-labelledby="inserir-tab">
       <form action="/salvar-questoes" method="POST" novalidate>
-        <div class="mb-4">
-         
-
-          <div class="alert alert-info small rounded-3 shadow-sm">
-            <p class="mb-2"><strong>📌 Como funciona?</strong></p>
-            <p>
-              Cole um <strong>bloco de texto no formato JSON</strong> contendo as informações das questões. 
-              Esse formato permite ao sistema entender cada pergunta, suas alternativas e a resposta correta.
-            </p>
-            <p>
-              Você pode usar o ChatGPT para criar este arquivo JSON.
-            </p>
-
-            <p class="mt-3 mb-1"><strong>💡 Dica:</strong> Peça ao ChatGPT usando este prompt:</p>
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="promptGPT"
-                readonly
-                value="Crie 5 questões de múltipla escolha na disciplina de Histórias com 5 alternativas cada, no formato JSON com os campos: id, texto, opcoes, correta (índice), disciplina e dificuldade."
-              />
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                onclick="copiarPrompt()"
-                aria-label="Copiar prompt para ChatGPT"
-              >
-                <i class="bi bi-clipboard"></i> Copiar Prompt
+        <!-- Ajuda em accordion para ocupar menos espaço -->
+        <div class="accordion mb-4" id="ajudaJson">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="ajudaHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#ajudaConteudo" aria-expanded="false" aria-controls="ajudaConteudo">
+                📌 Como funciona? (clique para ver)
               </button>
-            </div>
+            </h2>
+            <div id="ajudaConteudo" class="accordion-collapse collapse" aria-labelledby="ajudaHeading"
+              data-bs-parent="#ajudaJson">
+              <div class="accordion-body">
+                <p class="mb-2">Cole um <strong>bloco de texto em JSON</strong> com as questões (pergunta, alternativas
+                  e resposta correta).</p>
+                <p class="mb-2">Você pode usar o ChatGPT para gerar esse JSON.</p>
 
-            <p class="mb-2"><strong>🧩 Cada pergunta deve conter:</strong></p>
-            <ul class="ps-4 mb-3">
-              <li><code>id</code>: número único para cada questão (ex: 1, 2, 3...)</li>
-              <li><code>texto</code>: o enunciado da pergunta</li>
-              <li><code>opcoes</code>: lista com 5 alternativas</li>
-              <li><code>correta</code>: índice da alternativa correta (0 a 4)</li>
-              <li><code>disciplina</code>: matéria da questão (ex: Geografia, Matemática)</li>
-              <li><code>dificuldade</code>: nível da questão ("fácil", "médio" ou "difícil")</li>
-            </ul>
+                <p class="mt-3 mb-1"><strong>💡 Prompt sugerido:</strong></p>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="promptGPT" readonly
+                    value="Crie 5 questões de múltipla escolha na disciplina de História com 5 alternativas cada, no formato JSON com os campos: id, texto, opcoes, correta (índice), disciplina e dificuldade." />
+                  <button class="btn btn-outline-secondary" type="button" onclick="copiarPrompt()"
+                    aria-label="Copiar prompt para ChatGPT">
+                    <i class="bi bi-clipboard"></i> Copiar
+                  </button>
+                </div>
 
-            <p class="mb-2"><strong>📋 Exemplo de JSON válido:</strong></p>
-            <pre class="bg-light p-3 rounded border small" style="max-height: 280px; overflow:auto; font-size:0.9rem;">
+                <p class="mb-2"><strong>🧩 Cada pergunta deve conter:</strong></p>
+                <ul class="ps-4 mb-3">
+                  <li><code>id</code> (número único)</li>
+                  <li><code>texto</code> (enunciado)</li>
+                  <li><code>opcoes</code> (array com 5 alternativas)</li>
+                  <li><code>correta</code> (índice 0–4)</li>
+                  <li><code>disciplina</code></li>
+                  <li><code>dificuldade</code> ("fácil", "médio" ou "difícil")</li>
+                </ul>
+
+                <p class="mb-2"><strong>📋 Exemplo de JSON válido:</strong></p>
+                <pre class="bg-light p-3 rounded border small"
+                  style="max-height: 280px; overflow:auto; font-size:0.9rem;">
 [
   {
     "id": 6,
@@ -106,31 +85,46 @@
     "dificuldade": "fácil"
   }
 ]
-            </pre>
-
-            <p class="mb-0">
-              Clique no botão abaixo para inserir este exemplo automaticamente no campo de texto:
-            </p>
-            <button
-              type="button"
-              class="btn btn-outline-primary btn-sm mt-2"
-              onclick="inserirExemploJson()"
-            >
-              <i class="bi bi-file-earmark-code"></i> Inserir Exemplo de Questões
-            </button>
+                </pre>
+                <div class="d-flex flex-wrap gap-2">
+                  <button type="button" class="btn btn-outline-primary btn-sm" onclick="inserirExemploJson()">
+                    <i class="bi bi-file-earmark-code"></i> Inserir Exemplo
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <textarea
-            id="json"
-            name="json"
-            class="form-control"
-            rows="10"
-            required
-            placeholder="Cole aqui o texto com as questões no formato JSON"
-            style="font-family: monospace;"
-          ></textarea>
         </div>
 
+        <!-- Feedback inline -->
+        <div id="feedback" class="mb-3"></div>
+
+        <!-- Área do JSON (form-floating para ficar mais moderno) -->
+        <div class="form-floating mb-3">
+          <textarea id="json" name="json" class="form-control"
+            placeholder="Cole aqui o texto com as questões no formato JSON"
+            style="height: 260px; font-family: monospace;" required></textarea>
+          <label for="json">Cole aqui as questões em JSON</label>
+        </div>
+
+        <!-- Ações rápidas -->
+        <div class="row g-2 align-items-center mb-4">
+          <div class="col-12 col-md-auto d-grid">
+            <button type="button" class="btn btn-outline-primary" onclick="validarJson()">
+              <i class="bi bi-check2-circle me-1"></i> Validar JSON
+            </button>
+          </div>
+          <div class="col-12 col-md-auto">
+            <div class="input-group">
+              <input type="file" class="form-control" id="arquivoJson" accept=".json" />
+              <button class="btn btn-outline-secondary" type="button" onclick="carregarArquivoJson()">
+                <i class="bi bi-upload me-1"></i> Carregar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Salvar -->
         <button type="submit" class="btn btn-success fw-semibold px-4">
           <i class="bi bi-save2 me-1"></i> Salvar Questões
         </button>
@@ -138,24 +132,25 @@
     </div>
 
     <!-- Ver Questões -->
-    <div
-      class="tab-pane fade"
-      id="visualizar"
-      role="tabpanel"
-      aria-labelledby="visualizar-tab"
-    >
-      <h4 class="mb-4 text-secondary fw-semibold">
-        Questões Existentes
-      </h4>
+    <div class="tab-pane fade" id="visualizar" role="tabpanel" aria-labelledby="visualizar-tab">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between gap-2 mb-3">
+        <h4 class="mb-0 text-secondary fw-semibold">Questões Existentes</h4>
+        <div class="input-group" style="max-width: 420px;">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" id="filtroPerguntas"
+            placeholder="Filtrar por texto, disciplina ou dificuldade">
+        </div>
+      </div>
 
       {{#if perguntas.length}}
-      <ul class="list-group shadow-sm rounded">
+      <ul class="list-group shadow-sm rounded" id="listaPerguntas">
         {{#each perguntas}}
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <div class="me-3">
-            <strong>{{id}}.</strong> {{texto}} 
-            <span class="badge bg-secondary ms-2 text-capitalize">{{disciplina}}</span>
-            <span class="badge bg-info text-dark ms-1 text-capitalize">{{dificuldade}}</span>
+          <div class="me-3 flex-grow-1">
+            <strong class="me-2">{{id}}.</strong>
+            <span class="texto-item">{{texto}}</span>
+            <span class="badge bg-secondary ms-2 text-capitalize disciplina-item">{{disciplina}}</span>
+            <span class="badge text-dark ms-1 text-capitalize dificuldade-item">{{dificuldade}}</span>
           </div>
           <form action="/excluir-questao" method="POST" class="mb-0">
             <input type="hidden" name="id" value="{{id}}" />
@@ -170,33 +165,54 @@
       <p class="text-muted fst-italic">Nenhuma questão cadastrada ainda.</p>
       {{/if}}
     </div>
+
   </div>
 </div>
 
 <script>
-
-
-
-  // Salvar a aba ativa no localStorage quando for clicada
+  // ====== Persistir aba ativa ======
   document.querySelectorAll('#questoesTab button[data-bs-toggle="tab"]').forEach(button => {
     button.addEventListener('shown.bs.tab', function (event) {
       localStorage.setItem('abaAtiva', event.target.getAttribute('data-bs-target'));
     });
   });
 
-  // Ao carregar a página, restaurar a aba ativa do localStorage
   document.addEventListener('DOMContentLoaded', function () {
     const abaAtiva = localStorage.getItem('abaAtiva');
     if (abaAtiva) {
       const aba = new bootstrap.Tab(document.querySelector(`button[data-bs-target="${abaAtiva}"]`));
       aba.show();
     }
+
+    // Filtro de perguntas
+    const filtro = document.getElementById('filtroPerguntas');
+    if (filtro) {
+      filtro.addEventListener('input', function () {
+        const termo = this.value.toLowerCase();
+        document.querySelectorAll('#listaPerguntas > li').forEach(li => {
+          const texto = li.querySelector('.texto-item')?.textContent.toLowerCase() || '';
+          const disc = li.querySelector('.disciplina-item')?.textContent.toLowerCase() || '';
+          const diff = li.querySelector('.dificuldade-item')?.textContent.toLowerCase() || '';
+          const match = texto.includes(termo) || disc.includes(termo) || diff.includes(termo);
+          li.classList.toggle('d-none', !match);
+        });
+      });
+    }
   });
 
+  // ====== Helpers UI ======
+  function showFeedback(tipo, mensagem) {
+    // tipo: 'success' | 'danger' | 'warning' | 'info'
+    const div = document.getElementById('feedback');
+    div.innerHTML = `
+      <div class="alert alert-${tipo} alert-dismissible fade show" role="alert">
+        ${mensagem}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+      </div>
+    `;
+  }
 
-
-
-
+  // ====== Ações JSON ======
   function inserirExemploJson() {
     const exemplo = `[
   {
@@ -217,14 +233,101 @@
   }
 ]`;
     document.getElementById("json").value = exemplo;
+    showFeedback('info', 'Exemplo inserido no campo de JSON.');
   }
 
   function copiarPrompt() {
     const promptInput = document.getElementById("promptGPT");
     promptInput.select();
-    promptInput.setSelectionRange(0, 99999); // Para mobile
+    promptInput.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(promptInput.value)
-      .then(() => alert("Prompt copiado! Agora cole no ChatGPT."))
-      .catch(() => alert("Erro ao copiar prompt, copie manualmente."));
+      .then(() => showFeedback('success', 'Prompt copiado! Agora cole no ChatGPT.'))
+      .catch(() => showFeedback('danger', 'Erro ao copiar prompt. Copie manualmente.'));
   }
+
+  function carregarArquivoJson() {
+    const input = document.getElementById('arquivoJson');
+    if (!input.files || !input.files[0]) {
+      showFeedback('warning', 'Selecione um arquivo .json antes de carregar.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => {
+      document.getElementById('json').value = reader.result;
+      showFeedback('info', 'Conteúdo do arquivo carregado no campo de JSON.');
+    };
+    reader.onerror = () => showFeedback('danger', 'Não foi possível ler o arquivo.');
+    reader.readAsText(input.files[0], 'utf-8');
+  }
+
+  function validarJson() {
+    const raw = document.getElementById('json').value.trim();
+    if (!raw) {
+      showFeedback('warning', 'Cole o JSON antes de validar.');
+      return;
+    }
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch (e) {
+      showFeedback('danger', 'JSON inválido: ' + e.message);
+      return;
+    }
+    if (!Array.isArray(data) || data.length === 0) {
+      showFeedback('warning', 'O JSON deve ser um array com pelo menos uma questão.');
+      return;
+    }
+
+    // Verificações de estrutura
+    const camposObrig = ['id', 'texto', 'opcoes', 'correta', 'disciplina', 'dificuldade'];
+    for (let i = 0; i < data.length; i++) {
+      const q = data[i];
+      for (const c of camposObrig) {
+        if (!(c in q)) {
+          showFeedback('danger', `Questão ${i + 1}: campo obrigatório ausente: "${c}".`);
+          return;
+        }
+      }
+      if (!Array.isArray(q.opcoes) || q.opcoes.length !== 5) {
+        showFeedback('danger', `Questão ${i + 1}: "opcoes" deve ter exatamente 5 itens.`);
+        return;
+      }
+      if (typeof q.correta !== 'number' || q.correta < 0 || q.correta > 4) {
+        showFeedback('danger', `Questão ${i + 1}: "correta" deve ser um índice entre 0 e 4.`);
+        return;
+      }
+    }
+    showFeedback('success', `Tudo certo! ${data.length} questão(ões) pronta(s) para salvar.`);
+  }
+
+
+
+  function colorirDificuldades() {
+    document.querySelectorAll('.dificuldade-item').forEach(badge => {
+      const t = (badge.textContent || '').trim().toLowerCase();
+
+      // limpa cores anteriores
+      badge.classList.remove(
+        'bg-info', 'bg-secondary', 'bg-primary', 'bg-success', 'bg-warning', 'bg-danger',
+        'text-dark', 'text-white'
+      );
+
+      if (['fácil', 'facil', 'easy'].includes(t)) {
+        badge.classList.add('bg-success', 'text-white');     // verde
+      } else if (['médio', 'medio', 'medium'].includes(t)) {
+        badge.classList.add('bg-warning', 'text-dark');      // amarelo
+      } else if (['difícil', 'dificil', 'hard'].includes(t)) {
+        badge.classList.add('bg-danger', 'text-white');      // vermelho
+      } else {
+        badge.classList.add('bg-secondary', 'text-white');   // fallback
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', colorirDificuldades);
+
+
+
+
+
 </script>

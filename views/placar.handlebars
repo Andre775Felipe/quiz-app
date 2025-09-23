@@ -1,0 +1,113 @@
+<div class="container my-5">
+    <a href="/" class="btn btn-outline-secondary btn-sm">
+      <i class="bi bi-arrow-left me-1"></i> Voltar
+    </a>
+  <div class="text-center mb-4">
+    <h2 class="fw-bold text-primary"><i class="fas fa-trophy me-2"></i>Placar em Tempo Real</h2>
+    <p class="text-muted">Acompanhe quem está acertando as questões!</p>
+  </div>
+
+  <!-- Lista dinâmica -->
+  <div id="ranking" class="row g-3"></div>
+
+  <div id="placarAviso" class="fw-bold text-warning mt-2"></div>
+
+
+  <!-- Gráfico -->
+  <div class="card mt-4">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0"><i class="fas fa-chart-bar me-2"></i>Ranking Gráfico</h5>
+    </div>
+    <div class="card-body" style="height: 400px;">
+      <canvas id="graficoRanking"></canvas>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  let chart;
+
+  async function carregarResultados() {
+    try {
+      const res = await fetch("/api/resultados"); // 🔥 ajuste sua rota aqui
+      const resultados = await res.json();
+
+      // Agrupar por nome e pegar maior pontuação
+      const ranking = {};
+      resultados.forEach(r => {
+        if (!ranking[r.nome] || r.pontuacao > ranking[r.nome]) {
+          ranking[r.nome] = r.pontuacao;
+        }
+      });
+
+      // Ordenar
+      const jogadores = Object.entries(ranking).sort((a,b) => b[1]-a[1]);
+
+      // Atualizar cards
+      const rankingDiv = document.getElementById("ranking");
+      rankingDiv.innerHTML = "";
+      jogadores.forEach(([nome, pontos], i) => {
+        const card = document.createElement("div");
+        card.className = "col-md-4 col-6";
+        card.innerHTML = `
+          <div class="card border-${i==0?'warning':i==1?'secondary':'info'} shadow-sm text-center p-3 animate__animated animate__fadeInUp">
+            <h5 class="fw-bold">${nome}</h5>
+            <p class="display-6 text-${i==0?'warning':i==1?'secondary':'info'} fw-bold" data-pontos="${pontos}">0</p>
+          </div>`;
+        rankingDiv.appendChild(card);
+
+        // Animação de contagem
+        const el = card.querySelector("p");
+        let atual = 0;
+        const intervalo = setInterval(() => {
+          if (atual >= pontos) {
+            clearInterval(intervalo);
+          } else {
+            atual++;
+            el.textContent = atual;
+          }
+        }, 50);
+      });
+
+      // Atualizar gráfico
+      const labels = jogadores.map(j => j[0]);
+      const data = jogadores.map(j => j[1]);
+
+      if (chart) chart.destroy();
+      chart = new Chart(document.getElementById("graficoRanking").getContext("2d"), {
+        type: "bar",
+        data: {
+          labels,
+          datasets: [{
+            label: "Pontuação",
+            data,
+            backgroundColor: "rgba(13,110,253,.5)",
+            borderColor: "rgba(13,110,253,1)",
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: { duration: 1000 },
+          scales: {
+            y: { beginAtZero: true, ticks: { precision: 0 } }
+          }
+        }
+      });
+
+    } catch (err) {
+      console.error("Erro ao carregar resultados:", err);
+    }
+  }
+
+  // Atualiza a cada 5s
+  carregarResultados();
+  setInterval(carregarResultados, 5000);
+});
+</script>
+
+<!-- Animate.css para dar efeito de entrada -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>

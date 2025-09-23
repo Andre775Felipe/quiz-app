@@ -1,314 +1,604 @@
 [
   {
-    "id": 1,
-    "texto": "Qual comando é utilizado para criar uma instância de uma classe em Delphi?",
-    "opcoes": ["CreateObject", "new", "Create", "Alloc", "Instance"],
-    "correta": 2,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
-  },
-  {
-    "id": 2,
-    "texto": "Qual unidade é usada para acesso a banco de dados no Delphi usando FireDAC?",
-    "opcoes": ["DBGrid", "DataModule", "FDConnection", "SqlConnection", "ADOQuery"],
-    "correta": 2,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
-  },
-  {
     "id": 3,
-    "texto": "Qual a função principal de um DataModule em Delphi?",
+    "texto": "Quem construiu a arca para sobreviver ao dilúvio?",
     "opcoes": [
-      "Exibir componentes visuais",
-      "Isolar componentes não-visuais",
-      "Criar tabelas temporárias",
-      "Salvar configurações do usuário",
-      "Gerar arquivos executáveis"
+      "Moisés",
+      "Noé",
+      "Abraão",
+      "Davi",
+      "Elias"
     ],
     "correta": 1,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
+    "disciplina": "Bíblia",
+    "dificuldade": "fácil"
   },
   {
     "id": 4,
-    "texto": "Qual estrutura representa corretamente um loop em Delphi?",
-    "opcoes": ["for(i=0;i<10;i++)", "foreach x in y", "for i := 0 to 9 do", "do while()", "loop until"],
-    "correta": 2,
-    "disciplina": "Delphi",
+    "texto": "Em qual cidade Jesus nasceu?",
+    "opcoes": [
+      "Nazaré",
+      "Belém",
+      "Jerusalém",
+      "Cafarnaum",
+      "Betânia"
+    ],
+    "correta": 1,
+    "disciplina": "Bíblia",
     "dificuldade": "fácil"
   },
   {
     "id": 5,
-    "texto": "Qual componente é utilizado para exibir dados em formato tabular?",
-    "opcoes": ["TEdit", "TPanel", "TLabel", "TDBGrid", "TStringList"],
-    "correta": 3,
-    "disciplina": "Delphi",
-    "dificuldade": "fácil"
-  },
-  {
-    "id": 6,
-    "texto": "Qual evento é usado para tratar um clique em botão no Delphi?",
-    "opcoes": ["OnKeyPress", "OnChange", "OnClick", "OnLoad", "OnHover"],
-    "correta": 2,
-    "disciplina": "Delphi",
-    "dificuldade": "fácil"
-  },
-  {
-    "id": 7,
-    "texto": "Como se declara um array fixo de 10 inteiros em Delphi?",
+    "texto": "Quantos livros tem a Bíblia (cânon protestante)?",
     "opcoes": [
-      "var A: array of Integer;",
-      "var A: array[1..10] of Integer;",
-      "Integer A[10];",
-      "Array A = new Integer[10];",
-      "array<Integer> A;"
+      "64",
+      "66",
+      "70",
+      "73",
+      "39"
     ],
     "correta": 1,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
+    "disciplina": "Bíblia",
+    "dificuldade": "difícil"
   },
   {
     "id": 8,
-    "texto": "Qual operador lógico representa E (AND) em Delphi?",
-    "opcoes": ["&&", "and", "&", "e", "&&&"],
-    "correta": 1,
-    "disciplina": "Delphi",
+    "texto": "Quem traiu Jesus por 30 moedas de prata?",
+    "opcoes": [
+      "Pedro",
+      "Tiago",
+      "Judas Iscariotes",
+      "Caifás",
+      "Pilatos"
+    ],
+    "correta": 2,
+    "disciplina": "Bíblia",
     "dificuldade": "fácil"
   },
   {
     "id": 9,
-    "texto": "O que é um *record* em Delphi?",
+    "texto": "Qual salmo é conhecido como 'O Senhor é o meu pastor'?",
     "opcoes": [
-      "Um tipo de dado composto similar a classe, mas sem herança",
-      "Um componente visual",
-      "Uma tabela do banco",
-      "Uma função matemática",
-      "Um tipo de evento"
+      "Salmo 1",
+      "Salmo 23",
+      "Salmo 51",
+      "Salmo 91",
+      "Salmo 119"
     ],
-    "correta": 0,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
+    "correta": 1,
+    "disciplina": "Bíblia",
+    "dificuldade": "fácil"
   },
   {
     "id": 10,
-    "texto": "Qual função converte string em inteiro em Delphi?",
-    "opcoes": ["StrToInt", "Int", "ToInt", "CastString", "Convert.ToInt"],
-    "correta": 0,
-    "disciplina": "Delphi",
+    "texto": "Quem derrotou o gigante Golias?",
+    "opcoes": [
+      "Saul",
+      "Samuel",
+      "Davi",
+      "Jônatas",
+      "Calebe"
+    ],
+    "correta": 2,
+    "disciplina": "Bíblia",
     "dificuldade": "fácil"
   },
   {
     "id": 11,
-    "texto": "O que faz o comando Try...Except em Delphi?",
+    "texto": "Qual profeta foi engolido por um grande peixe?",
     "opcoes": [
-      "Executa comandos em ordem assíncrona",
-      "Define tipos de dados complexos",
-      "Trata exceções e erros em tempo de execução",
-      "Cria um loop infinito",
-      "Declara eventos para botões"
+      "Jonas",
+      "Noé",
+      "Josué",
+      "Neemias",
+      "Habacuque"
     ],
-    "correta": 2,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
-  },
-  {
-    "id": 12,
-    "texto": "Qual dessas opções é um tipo de dado booleano válido em Delphi?",
-    "opcoes": ["Bit", "Flag", "Bool", "Boolean", "YesNo"],
-    "correta": 3,
-    "disciplina": "Delphi",
+    "correta": 0,
+    "disciplina": "Bíblia",
     "dificuldade": "fácil"
   },
   {
-    "id": 13,
-    "texto": "O que representa a diretiva 'private' em Delphi?",
+    "id": 12,
+    "texto": "Quantos são os 'frutos do Espírito' listados em Gálatas 5:22-23?",
     "opcoes": [
-      "Métodos acessíveis apenas dentro da unit",
-      "Métodos acessíveis somente pela classe",
-      "Métodos visíveis globalmente",
-      "Classes protegidas contra cópia",
-      "Atributos imutáveis"
+      "7",
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correta": 2,
+    "disciplina": "Bíblia",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 13,
+    "texto": "Qual rei ficou famoso por sua sabedoria ao julgar duas mulheres que disputavam um bebê?",
+    "opcoes": [
+      "Davi",
+      "Salomão",
+      "Ezequias",
+      "Josias",
+      "Saul"
     ],
     "correta": 1,
-    "disciplina": "Delphi",
+    "disciplina": "Bíblia",
     "dificuldade": "médio"
   },
   {
     "id": 14,
-    "texto": "Qual a função do componente TTimer?",
+    "texto": "Qual apóstolo também era conhecido como 'Dídimo'?",
     "opcoes": [
-      "Marcar tempo de execução",
-      "Atualizar hora do sistema",
-      "Executar ações em intervalos definidos",
-      "Configurar datas",
-      "Cronometrar sessões do usuário"
+      "Pedro",
+      "João",
+      "Tiago",
+      "Tomé",
+      "André"
     ],
-    "correta": 2,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
+    "correta": 3,
+    "disciplina": "Bíblia",
+    "dificuldade": "difícil"
   },
   {
     "id": 15,
-    "texto": "Como é chamada a técnica de reutilização de código em Delphi orientado a objetos?",
-    "opcoes": ["Composição", "Delegação", "Herança", "Polimorfismo", "Encapsulamento"],
-    "correta": 2,
-    "disciplina": "POO",
+    "texto": "Qual livro narra o derramamento do Espírito Santo no Pentecostes?",
+    "opcoes": [
+      "Evangelho de Lucas",
+      "Atos dos Apóstolos",
+      "Romanos",
+      "Apocalipse",
+      "Hebreus"
+    ],
+    "correta": 1,
+    "disciplina": "Bíblia",
     "dificuldade": "médio"
   },
   {
     "id": 16,
-    "texto": "Qual comando inicia uma transação com banco de dados em Delphi?",
-    "opcoes": ["Start", "BeginTransaction", "StartSQL", "BeginTrans", "SQLBegin"],
+    "texto": "Quem escreveu a maioria das cartas do Novo Testamento?",
+    "opcoes": [
+      "Pedro",
+      "Paulo",
+      "Tiago",
+      "João",
+      "Judas"
+    ],
     "correta": 1,
-    "disciplina": "Banco de Dados",
-    "dificuldade": "difícil"
-  },
-  {
-    "id": 17,
-    "texto": "Como se chama a conversão de tipo explícita em Delphi?",
-    "opcoes": ["Casting", "Override", "TypeOf", "Recasting", "Forcing"],
-    "correta": 0,
-    "disciplina": "Delphi",
+    "disciplina": "Bíblia",
     "dificuldade": "médio"
   },
   {
+    "id": 17,
+    "texto": "Qual rainha arriscou a vida para interceder pelo seu povo diante do rei?",
+    "opcoes": [
+      "Rute",
+      "Ester",
+      "Bate-Seba",
+      "Ana",
+      "Débora"
+    ],
+    "correta": 1,
+    "disciplina": "Bíblia",
+    "dificuldade": "fácil"
+  },
+  {
     "id": 18,
-    "texto": "Qual componente pode ser usado para conexões com banco de dados Firebird?",
-    "opcoes": ["TADOQuery", "TQuery", "TFDQuery", "TSqlQuery", "TOleDbQuery"],
-    "correta": 2,
-    "disciplina": "Banco de Dados",
+    "texto": "Em qual monte Moisés recebeu os Dez Mandamentos?",
+    "opcoes": [
+      "Horebe",
+      "Carmelo",
+      "Sião",
+      "Sinai",
+      "Tabor"
+    ],
+    "correta": 3,
+    "disciplina": "Bíblia",
     "dificuldade": "médio"
   },
   {
     "id": 19,
-    "texto": "Qual a sintaxe correta para definir uma propriedade em uma classe Delphi?",
+    "texto": "Qual profeta confrontou os profetas de Baal no Monte Carmelo?",
     "opcoes": [
-      "property Nome: string;",
-      "define Nome: string;",
-      "prop Nome as string;",
-      "Nome as Property string;",
-      "var Nome: Property of string;"
+      "Eliseu",
+      "Elias",
+      "Jeremias",
+      "Miquéias",
+      "Amós"
     ],
-    "correta": 0,
-    "disciplina": "POO",
-    "dificuldade": "médio"
+    "correta": 1,
+    "disciplina": "Bíblia",
+    "dificuldade": "difícil"
   },
   {
     "id": 20,
-    "texto": "Qual dessas opções representa um tipo de dado variante em Delphi?",
-    "opcoes": ["Variant", "Flexible", "Object", "VarData", "Universal"],
-    "correta": 0,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
+    "texto": "Por quantos dias e noites choveu durante o dilúvio?",
+    "opcoes": [
+      "3 dias e 3 noites",
+      "7 dias e 7 noites",
+      "30 dias e 30 noites",
+      "40 dias e 40 noites",
+      "50 dias e 50 noites"
+    ],
+    "correta": 3,
+    "disciplina": "Bíblia",
+    "dificuldade": "fácil"
   },
   {
     "id": 21,
-    "texto": "Qual palavra-chave em Delphi é usada para criar uma interface?",
-    "opcoes": ["class", "object", "interface", "type", "record"],
-    "correta": 2,
-    "disciplina": "POO",
+    "texto": "Qual versículo é frequentemente considerado o mais curto da Bíblia (em muitas traduções)?",
+    "opcoes": [
+      "João 11:35 - 'Jesus chorou'",
+      "Salmo 119:105",
+      "Gênesis 1:1",
+      "1 Tessalonicenses 5:17 - 'Orai sem cessar'",
+      "Êxodo 20:13 - 'Não matarás'"
+    ],
+    "correta": 0,
+    "disciplina": "Bíblia",
     "dificuldade": "difícil"
   },
   {
     "id": 22,
-    "texto": "O que o evento OnCreate de um Form faz?",
+    "texto": "Quem batizou Jesus no rio Jordão?",
     "opcoes": [
-      "É chamado após o formulário ser destruído",
-      "É chamado antes do formulário ser criado",
-      "É executado na criação do formulário",
-      "Define estilos visuais",
-      "Inicializa o banco de dados"
+      "Pedro",
+      "João Batista",
+      "João Evangelista",
+      "Ananias",
+      "Filipe"
     ],
-    "correta": 2,
-    "disciplina": "Delphi",
+    "correta": 1,
+    "disciplina": "Bíblia",
     "dificuldade": "fácil"
   },
   {
-    "id": 23,
-    "texto": "Em Delphi, como se trata erros sem encerrar o programa?",
-    "opcoes": ["Try..Finally", "If..Then", "Break", "Try..Except", "Assert"],
+    "id": 1001,
+    "texto": "O que estabeleceu o Tratado de Tordesilhas (1494)?",
+    "opcoes": [
+      "O fim da União Ibérica",
+      "A divisão das colônias portuguesas na África",
+      "A divisão das terras 'descobertas' entre Portugal e Espanha por um meridiano a oeste de Cabo Verde",
+      "A criação do Conselho Ultramarino",
+      "A libertação dos povos indígenas"
+    ],
+    "correta": 2,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 1002,
+    "texto": "Qual evento costuma marcar o início da Idade Moderna?",
+    "opcoes": [
+      "Queda da Bastilha (1789)",
+      "Chegada dos portugueses ao Brasil (1500)",
+      "Queda de Constantinopla (1453)",
+      "Descobrimento da América por Colombo (1492)",
+      "Revolução Russa (1917)"
+    ],
+    "correta": 2,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 1003,
+    "texto": "Quem é tradicionalmente apontado como líder da Inconfidência Mineira (1789)?",
+    "opcoes": [
+      "Tiradentes (Joaquim José da Silva Xavier)",
+      "José Bonifácio de Andrada e Silva",
+      "Dom Pedro I",
+      "Tomás Antônio Gonzaga",
+      "Felipe dos Santos"
+    ],
+    "correta": 0,
+    "disciplina": "História",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 1004,
+    "texto": "Uma característica central da Primeira Revolução Industrial foi:",
+    "opcoes": [
+      "A adoção generalizada da eletricidade e do petróleo",
+      "A mecanização da produção com uso da máquina a vapor",
+      "A difusão da internet e da automação digital",
+      "O fortalecimento do sistema feudal no campo",
+      "A expansão do socialismo na Europa Ocidental"
+    ],
+    "correta": 1,
+    "disciplina": "História",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 1005,
+    "texto": "Em que ano foi assinada a Lei Áurea, que aboliu a escravidão no Brasil?",
+    "opcoes": [
+      "1822",
+      "1850",
+      "1871",
+      "1888",
+      "1891"
+    ],
     "correta": 3,
-    "disciplina": "Delphi",
+    "disciplina": "História",
     "dificuldade": "fácil"
   },
   {
-    "id": 24,
-    "texto": "Qual o uso principal de TClientDataSet?",
+    "id": 1,
+    "texto": "Onde Jesus nasceu segundo os Evangelhos?",
     "opcoes": [
-      "Executar comandos SQL em segundo plano",
-      "Criar interfaces gráficas com dados",
-      "Gerenciar dados em memória desconectada",
-      "Mostrar registros em tela",
-      "Atualizar o banco de dados remoto"
+      "Jerusalém",
+      "Belém",
+      "Nazaré",
+      "Cafarnaum",
+      "Samaria"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 2,
+    "texto": "Qual era a profissão de José, pai terreno de Jesus?",
+    "opcoes": [
+      "Carpinteiro",
+      "Pescador",
+      "Pastor",
+      "Ferreiro",
+      "Sacerdote"
+    ],
+    "correta": 0,
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 3,
+    "texto": "Quem batizou Jesus no rio Jordão?",
+    "opcoes": [
+      "Pedro",
+      "Tiago",
+      "João Batista",
+      "Paulo",
+      "Moisés"
     ],
     "correta": 2,
-    "disciplina": "Banco de Dados",
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 4,
+    "texto": "Quantos discípulos Jesus escolheu?",
+    "opcoes": [
+      "7",
+      "10",
+      "12",
+      "70",
+      "40"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 5,
+    "texto": "Qual foi o primeiro milagre de Jesus relatado no Evangelho de João?",
+    "opcoes": [
+      "Curar um cego",
+      "Multiplicar pães",
+      "Andar sobre as águas",
+      "Transformar água em vinho",
+      "Ressuscitar Lázaro"
+    ],
+    "correta": 3,
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 6,
+    "texto": "Onde Jesus cresceu durante sua infância?",
+    "opcoes": [
+      "Belém",
+      "Jericó",
+      "Nazaré",
+      "Jerusalém",
+      "Betânia"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 7,
+    "texto": "Quem negou Jesus três vezes antes do galo cantar?",
+    "opcoes": [
+      "Judas",
+      "Pedro",
+      "Tiago",
+      "João",
+      "Tomé"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
+    "dificuldade": "fácil"
+  },
+  {
+    "id": 8,
+    "texto": "Qual governador romano condenou Jesus à crucificação?",
+    "opcoes": [
+      "Herodes",
+      "Pôncio Pilatos",
+      "César Augusto",
+      "Tibério",
+      "Caifás"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 9,
+    "texto": "Quantos dias Jesus jejuou no deserto antes de ser tentado pelo diabo?",
+    "opcoes": [
+      "20",
+      "30",
+      "40",
+      "10",
+      "7"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 10,
+    "texto": "Qual discípulo era cobrador de impostos antes de seguir Jesus?",
+    "opcoes": [
+      "Pedro",
+      "Mateus",
+      "João",
+      "André",
+      "Simão, o Zelote"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 11,
+    "texto": "Quem pediu o corpo de Jesus a Pilatos após a crucificação?",
+    "opcoes": [
+      "José de Arimateia",
+      "Nicodemos",
+      "Maria Madalena",
+      "Simão Cireneu",
+      "João"
+    ],
+    "correta": 0,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 12,
+    "texto": "Qual foi a resposta de Jesus quando perguntado sobre pagar impostos a César?",
+    "opcoes": [
+      "Não devem pagar",
+      "Devem pagar apenas metade",
+      "Dai a César o que é de César e a Deus o que é de Deus",
+      "Impostos são pecado",
+      "Não respondeu"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 13,
+    "texto": "Qual era o nome do homem que ajudou Jesus a carregar a cruz?",
+    "opcoes": [
+      "Bartimeu",
+      "Simão Cireneu",
+      "José de Arimateia",
+      "Lázaro",
+      "Tomé"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 14,
+    "texto": "Em qual cidade Jesus foi crucificado?",
+    "opcoes": [
+      "Nazaré",
+      "Jericó",
+      "Jerusalém",
+      "Betânia",
+      "Samaria"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 15,
+    "texto": "Quem foi o primeiro a ver Jesus ressuscitado?",
+    "opcoes": [
+      "Pedro",
+      "Maria Madalena",
+      "João",
+      "José de Arimateia",
+      "Tiago"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
+    "dificuldade": "médio"
+  },
+  {
+    "id": 16,
+    "texto": "Qual profecia do Antigo Testamento predisse que o Messias nasceria em Belém?",
+    "opcoes": [
+      "Isaías 53",
+      "Miquéias 5:2",
+      "Jeremias 31",
+      "Salmo 23",
+      "Ezequiel 37"
+    ],
+    "correta": 1,
+    "disciplina": "Jesus",
     "dificuldade": "difícil"
   },
   {
-    "id": 25,
-    "texto": "Em Delphi, qual operador é usado para atribuição?",
-    "opcoes": [":=", "=", "==", "<-", "::"],
-    "correta": 0,
-    "disciplina": "Lógica",
-    "dificuldade": "fácil"
-  },
-  {
-    "id": 26,
-    "texto": "Como se chama a técnica de esconder os detalhes internos de uma classe?",
-    "opcoes": ["Herança", "Encapsulamento", "Polimorfismo", "Modularidade", "Abstração"],
-    "correta": 1,
-    "disciplina": "POO",
-    "dificuldade": "médio"
-  },
-  {
-    "id": 27,
-    "texto": "Como executar uma SQL simples usando TFdQuery?",
+    "id": 17,
+    "texto": "Qual foi a última frase de Jesus na cruz segundo o Evangelho de João?",
     "opcoes": [
-      "FDQuery1.ExecSQL;",
-      "FDQuery1.Execute;",
-      "FDQuery1.RunSQL;",
-      "FDQuery1.Start;",
-      "FDQuery1.BeginExec;"
-    ],
-    "correta": 0,
-    "disciplina": "Banco de Dados",
-    "dificuldade": "médio"
-  },
-  {
-    "id": 28,
-    "texto": "O que significa RAD no contexto do Delphi?",
-    "opcoes": [
-      "Rapid Application Development",
-      "Real Abstract Designer",
-      "Runtime API Documentation",
-      "Remote Application Debugging",
-      "Resource Aware Delphi"
-    ],
-    "correta": 0,
-    "disciplina": "Delphi",
-    "dificuldade": "médio"
-  },
-  {
-    "id": 29,
-    "texto": "O que faz a função `Length()` em Delphi?",
-    "opcoes": [
-      "Retorna a posição final do array",
-      "Define o tamanho de uma string",
-      "Retorna o tamanho de arrays ou strings",
-      "Corta a string no índice",
-      "Substitui caracteres por espaço"
+      "Pai, perdoa-lhes",
+      "Tenho sede",
+      "Está consumado",
+      "Em tuas mãos entrego meu espírito",
+      "Por que me abandonaste?"
     ],
     "correta": 2,
-    "disciplina": "Lógica",
-    "dificuldade": "fácil"
+    "disciplina": "Jesus",
+    "dificuldade": "difícil"
   },
   {
-    "id": 30,
-    "texto": "Para acessar um item específico de um array em Delphi, qual é a sintaxe correta?",
-    "opcoes": ["array[i]", "array.i", "array{i}", "array(i)", "get(array, i)"],
+    "id": 18,
+    "texto": "Qual apóstolo duvidou da ressurreição até ver as marcas nas mãos de Jesus?",
+    "opcoes": [
+      "Pedro",
+      "Tiago",
+      "Tomé",
+      "André",
+      "Bartolomeu"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 19,
+    "texto": "Segundo o Evangelho de Lucas, quantos anos Jesus tinha quando começou seu ministério?",
+    "opcoes": [
+      "20",
+      "25",
+      "30",
+      "33",
+      "40"
+    ],
+    "correta": 2,
+    "disciplina": "Jesus",
+    "dificuldade": "difícil"
+  },
+  {
+    "id": 20,
+    "texto": "No Sermão do Monte, qual é a primeira bem-aventurança dita por Jesus?",
+    "opcoes": [
+      "Bem-aventurados os humildes de espírito",
+      "Bem-aventurados os que choram",
+      "Bem-aventurados os mansos",
+      "Bem-aventurados os misericordiosos",
+      "Bem-aventurados os pacificadores"
+    ],
     "correta": 0,
-    "disciplina": "Delphi",
-    "dificuldade": "fácil"
+    "disciplina": "Jesus",
+    "dificuldade": "difícil"
   }
 ]
